@@ -36,6 +36,27 @@
     input,textarea{width:100%;padding:10px;margin:8px 0;border-radius:6px;border:none}
     button{padding:10px 16px;border:none;border-radius:8px;background:#38bdf8;font-weight:bold;cursor:pointer}
     button:hover{opacity:0.9}
+    .hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Small profile image */
+.profile-img {
+  width: 90px;          /* small size */
+  height: 90px;
+  border-radius: 50%;  /* circle */
+  object-fit: cover;
+  border: 3px solid #38bdf8;
+}
+
+/* Optional: align text nicely */
+.hero-text {
+  text-align: left;
+}
+
   </style>
 </head>
 <body>
@@ -52,11 +73,16 @@
 
 <!-- Hero Section -->
 <section class="hero">
-  <img src="profile.jpeg" alt="Prathyusha">
-   
-  <h1>Hi, I'm Prathyusha 👋</h1>
-  <p>Frontend Developer | UI Enthusiast</p>
+  <div class="hero-content">
+    <img src="profile.jpeg" alt="Prathyusha" class="profile-img">
+
+    <div class="hero-text">
+      <h1>Hi, I'm Prathyusha 👋</h1>
+      <p>Frontend Developer | UI Enthusiast</p>
+    </div>
+  </div>
 </section>
+
 
 <!-- About Section -->
 <section id="about">
